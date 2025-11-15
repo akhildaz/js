@@ -76,13 +76,13 @@ let userOne = {
     age: 18
 }
 
-console.log(userOne.email);
+// console.log(userOne.email); output: akhil@google.com
 
 let userTwo = userOne
 
 userTwo.email = "akhil@meta.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+// console.log(userOne.email);  output: akhil@meta.com
+// console.log(userTwo.email); output: akhil@meta.com
 
 
