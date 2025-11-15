@@ -2,8 +2,8 @@
 
 // 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
 
-const id = Symbol("123");
-const anotherId = Symbol("123");
+// const id = Symbol("123");
+// const anotherId = Symbol("123");
 
 // console.log(id == anotherId);  output: false
 
@@ -28,9 +28,9 @@ const anotherId = Symbol("123");
 
 
 // functions
-const myFunction = function() {
-    console.log("hello world");
-}
+// const myFunction = function() {
+//     console.log("hello world");
+// }
 
 // myFunction(); output: hello world
 // console.log(typeof myFunction); output: function
@@ -49,3 +49,40 @@ const myFunction = function() {
  Variables in JavaScript can change their type throughout the program's execution; for example, a variable can hold a number one moment and a string the next.
  Type checking in JavaScript occurs during runtime, which allows code to compile even if it contains type errors that would only be caught when the program is executed.
  While JavaScript itself is dynamically typed, tools like TypeScript and Flow provide optional static type checking, allowing developers to add type safety to their code before it runs. */
+
+//  *********************************************************
+
+// memory, stack (primitive), heap (non primitive)
+
+let codeName = "codeAkhil"
+
+let anotherName = codeName
+
+// console.table([codeName, anotherName]);
+
+// ┌─────────┬─────────────┐
+// │ (index) │ Values      │
+// ├─────────┼─────────────┤
+// │ 0       │ 'codeAkhil' │
+// │ 1       │ 'codeAkhil' │
+// └─────────┴─────────────┘
+
+// in primitive, the change in the reference is done in copy version not in original one, so in stack copy is made
+
+// in reference, the change in the reference is done in original one, in heap no copy made, the reference will be same
+
+let userOne = {
+    email: "akhil@google.com",
+    age: 18
+}
+
+console.log(userOne.email);
+
+let userTwo = userOne
+
+userTwo.email = "akhil@meta.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
