@@ -69,5 +69,32 @@ const name = "Akhil"
 // 3
 
 
+// const userName = "Akhil";
 
+// const newString = userName.substring(0, 3);
+// console.log(newString);
+
+// const anotherString = userName.slice(-8, 4);
+// console.log(anotherString);
+
+// When negative indices are provided, slice() interprets them as counting from the end of the string, whereas substring() treats negative values as zero.
+//  For example, str.slice(-3) extracts the last three characters, but str.substring(-3) behaves as if the index were 0.
+
+// const newString = "  akhil";
+// console.log(newString);
+// console.log(newString.trim());
+
+const url = "https://akhil.com/akhil%20google";
+
+console.log(url.replace("%20", "-"));
+
+console.log(url.includes("akhil"));
+
+console.log(url.split("/"));
+
+// output
+
+// https://akhil.com/akhil-google
+// true
+// [ 'https:', '', 'akhil.com', 'akhil%20google' ]
 
