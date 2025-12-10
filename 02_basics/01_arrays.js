@@ -10,7 +10,6 @@
 // console.log(typeof names);
 // console.log(names);
 
-
 // array methods
 
 // arr.push(7);
