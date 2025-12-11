@@ -2,7 +2,6 @@
 // console.log(arr);
 
 // const country = ["japan", "india", "china", "korea"];
-
 // console.log(typeof country);
 
 // const names = new Array("Eve", "Kama", "Emma", "Emily");
