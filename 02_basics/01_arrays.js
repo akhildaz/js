@@ -10,7 +10,6 @@
 // console.log(names);
 
 // array methods
-
 // arr.push(7);
 // arr.pop();
 // arr.unshift(8);
